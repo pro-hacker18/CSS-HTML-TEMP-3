@@ -352,7 +352,7 @@ section.landing {
 section.landing::before {
   content: "";
   background-color: #ececec;
-  height: calc(108vh - 80px);
+  height: calc(100vh - 80px);
   width: 100%;
   position: absolute;
   top: -110px;
