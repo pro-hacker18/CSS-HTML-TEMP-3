@@ -64,6 +64,16 @@ ul {
   background-color: var(--main-color);
   color: white;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
 /* end global rules*/
 /* start components */
 
@@ -207,7 +217,7 @@ header nav > ul > li > a {
   overflow: hidden;
 }
 
-@media (min-width:1199px) {
+@media (min-width: 1199px) {
   header nav > ul > li > a {
     font-size: 20px;
   }
@@ -352,7 +362,7 @@ section.landing {
 section.landing::before {
   content: "";
   background-color: #ececec;
-  height: calc(100vh - 80px);
+  height: calc(108vh - 80px);
   width: 100%;
   position: absolute;
   top: -110px;
@@ -712,7 +722,7 @@ section.articles
 }
 
 .features .container .features-container .time::after {
-  background-color:  rgb(0 150 136 / 60%);
+  background-color: rgb(0 150 136 / 60%);
 }
 
 .features .container .features-container .passion::after {
@@ -731,7 +741,7 @@ section.articles
   padding: 30px;
   position: relative;
   z-index: 12;
-  top: -5px
+  top: -5px;
 }
 
 .features .container .features-container .feature figure .text h3 {
@@ -745,7 +755,7 @@ section.articles
 .features .container .features-container .quality figure .text h3::after,
 .features .container .features-container .time figure .text h3::after,
 .features .container .features-container .passion figure .text h3::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 5px;
   left: 10%;
@@ -776,7 +786,7 @@ section.articles
   padding: 10px 25px;
   display: block;
   width: fit-content;
-  margin: 45px auto 0 ;
+  margin: 45px auto 0;
   position: relative;
   font-weight: bold;
   font-size: 22px;
@@ -832,9 +842,8 @@ section.articles
   background-color: #009688;
 }
 
-
 .features .container .features-container .passion figure .text a::before {
-  background-color: #03a9f4
+  background-color: #03a9f4;
 }
 
 /* end features */
@@ -912,7 +921,7 @@ section.team .container .team-container .team-box {
 }
 
 section.team .container .team-container .team-box::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: -50px;
@@ -1005,7 +1014,7 @@ section.team .container .team-container .team-box .info p {
 }
 
 .services .container .services-container .serv-box::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -1030,7 +1039,7 @@ section.team .container .team-container .team-box .info p {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 .services .container .services-container .serv-box i {
@@ -1110,7 +1119,7 @@ section.team .container .team-container .team-box .info p {
 .our-skills .container .skills-container .skill h3 {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
 
 .our-skills .container .skills-container .skill h3 span {
@@ -1162,7 +1171,7 @@ section.team .container .team-container .team-box .info p {
 }
 
 .h-work .container .steps-container {
-  flex: 1
+  flex: 1;
 }
 
 .h-work .container .steps-container .step {
@@ -1188,7 +1197,7 @@ section.team .container .team-container .team-box .info p {
 }
 
 .h-work .container .steps-container .step::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1247,7 +1256,7 @@ section.team .container .team-container .team-box .info p {
 /* start latest Events */
 .events .container .top {
   display: flex;
-  gap:40px;
+  gap: 40px;
 }
 
 .events .container .top .image img {
@@ -1258,7 +1267,6 @@ section.team .container .team-container .team-box .info p {
   .events .container .top .image {
     display: none;
   }
-  
 }
 
 .events .container .top .counter {
@@ -1271,7 +1279,7 @@ section.team .container .team-container .team-box .info p {
   border: 1px solid #ccc;
   border-radius: 10px;
   text-align: center;
-  transition: var(--main-transition)
+  transition: var(--main-transition);
 }
 
 .events .container .top .counter .box:hover {
@@ -1338,7 +1346,7 @@ section.team .container .team-container .team-box .info p {
 }
 
 .events .container .form form input[type="email"] {
-  padding: 20px ;
+  padding: 20px;
   width: 320px;
 }
 
@@ -1470,7 +1478,6 @@ section.team .container .team-container .team-box .info p {
   border-color: transparent #fff transparent transparent;
 }
 
-
 .m-plans .plans .plan:nth-of-type(2):hover .ad::after {
   border-color: transparent #f6f6f6 transparent transparent;
 }
@@ -1599,7 +1606,6 @@ section.team .container .team-container .team-box .info p {
   color: var(--main-color);
   padding: 20px;
   background-color: #f4f4f4;
-
 }
 
 .videos .v-box .v-menu h3::after {
@@ -1783,6 +1789,11 @@ section.team .container .team-container .team-box .info p {
   font-size: 47px;
   font-weight: 800;
 }
+
+.stats .stats-container .stat p.money::after {
+  content: "k";
+}
+
 .stats .stats-container .stat span {
   font-style: italic;
   color: var(--main-color);
@@ -1822,9 +1833,10 @@ section.team .container .team-container .team-box .info p {
 }
 
 @keyframes chang {
-  0%, 100% {
+  0%,
+  100% {
     background-image: url(../images/discount-background1.jpg);
-}
+  }
   50% {
     background-image: url(../images/discount-background2.jpg);
   }
@@ -1871,11 +1883,13 @@ section.team .container .team-container .team-box .info p {
 }
 
 .discount .dis-box .right {
-  display: flex;  display: flex;
+  display: flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;}
+  align-items: center;
+}
 
 .discount .dis-box .right .content {
   display: flex;
@@ -1904,7 +1918,7 @@ section.team .container .team-container .team-box .info p {
   border-bottom: 1px solid #ccc;
   background-color: #f9f9f9;
   caret-color: var(--main-color);
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .discount .dis-box .right .content .form form input::placeholder,
@@ -1945,7 +1959,7 @@ footer .container {
   gap: 40px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   footer .container {
     text-align: center;
   }
@@ -1970,7 +1984,7 @@ footer .container .dis .link {
   gap: 10px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   footer .container .dis .link {
     justify-content: center;
   }
@@ -2014,7 +2028,7 @@ footer .container .links ul li {
 }
 
 footer .container .links ul li:not(:last-of-type) {
-border-bottom: 1px solid #444;
+  border-bottom: 1px solid #444;
 }
 
 footer .container .links ul li:hover {
@@ -2039,7 +2053,7 @@ footer .container .infos .info {
   align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   footer .container .infos .info {
     flex-direction: column;
     gap: 15px;
@@ -2091,7 +2105,7 @@ footer p.copy-right {
 }
 
 .up i {
-  animation: up 1.5s  infinite;
+  animation: up 1.5s infinite;
   animation-play-state: paused;
 }
 
@@ -2116,3 +2130,26 @@ footer p.copy-right {
 }
 /* end go to top */
 /* i did it :) */
+
+/* scroll */
+.scroll-top {
+  width: 45px;
+  height: 45px;
+  background-color: var(--main-color);
+  color: var(--section-background);
+  border-radius: 50%;
+  position: fixed;
+  right: -60px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 28px;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+.scroll-top.show {
+  right: 10px;
+}

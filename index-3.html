@@ -648,25 +648,25 @@
         <article class="skill">
           <h3>HTML <span>80%</span></h3>
           <div class="progress">
-            <span style="width: 80%"></span>
+            <span style="width: 0" data-width="80%"></span>
           </div>
         </article>
         <article class="skill">
           <h3>CSS <span>85%</span></h3>
           <div class="progress">
-            <span style="width: 85%"></span>
+            <span style="width: 0" data-width="85%"></span>
           </div>
         </article>
         <article class="skill">
           <h3>JavaScript <span>70%</span></h3>
           <div class="progress">
-            <span style="width: 70%"></span>
+            <span style="width: 0" data-width="70%"></span>
           </div>
         </article>
         <article class="skill">
           <h3>Python <span>80%</span></h3>
           <div class="progress">
-            <span style="width: 80%"></span>
+            <span style="width: 0" data-width="80%"></span>
           </div>
         </article>
       </section>
@@ -742,19 +742,19 @@
         <section class="right">
           <section class="counter">
             <article class="box">
-              <p class="no">15</p>
+              <p class="no days">15</p>
               <p>days</p>
             </article>
             <article class="box">
-              <p class="no">08</p>
+              <p class="no hours">08</p>
               <p>hours</p>
             </article>
             <article class="box">
-              <p class="no">45</p>
+              <p class="no minutes">45</p>
               <p>minutes</p>
             </article>
             <article class="box">
-              <p class="no">55</p>
+              <p class="no seconds">55</p>
               <p>seconds</p>
             </article>
           </section>
@@ -894,22 +894,22 @@
       <section class="stats-container">
         <article class="stat">
           <i class="fa-regular fa-user"></i>
-          <p>300</p>
+          <p data-goal="300">0</p>
           <span>Clients</span>
         </article>
         <article class="stat">
           <i class="fa-solid fa-code"></i>
-          <p>400</p>
+          <p data-goal="400">0</p>
           <span>Projects</span>
         </article>
         <article class="stat">
           <i class="fa-solid fa-earth-asia"></i>
-          <p>12</p>
+          <p data-goal="12">0</p>
           <span>Countries</span>
         </article>
         <article class="stat">
           <i class="fa-regular fa-money-bill-1"></i>
-          <p>500K</p>
+          <p data-goal="500" class="money">0</p>
           <span>Money</span>
         </article>
       </section>
@@ -1018,14 +1018,13 @@
         <img src="images/gallery-06.png" alt="photo" />
       </section>
     </div>
-    <p class="copy-right">made with <small><3 by elzero</small></p>
+    <p class="copy-right">made <small> by elzero</small></p>
   </footer>
   <!-- end footer -->
   <!-- start go to top -->
-    <a href="#header" class="up">
-      <i class="fa-solid fa-angle-up"></i>
-    </a>
+  <div class="scroll-top"><i class="fa-solid fa-angle-up"></i></div>
   <!-- end go to top -->
+  <script src="main.js"></script>
 </body>
 
 </html>
