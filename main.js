@@ -56,7 +56,7 @@ window.addEventListener("scroll", function () {
 });
 
 // count down timer
-let countDownDat = new Date("Jan 16, 2023 23:59:59").getTime();
+let countDownDat = new Date("Jan 16, 2024 00:00:01").getTime();
 
 let counter = setInterval(() => {
   // get date now
